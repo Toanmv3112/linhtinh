@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TINHTONG2</title>
+</head>
+<body>
+    <!-- nhập số dương n, tính tổng S = số lẻ x1 + số chẵn x 2 -->
+    <!-- số chẵn, số lẻ từ 1 đến n -->
+    <script>
+        let num=6;
+        let sum=0;
+        if(num>0){
+        for(i=1;i<=num;i++){
+            if(i%2==0){
+                sum= sum+i*2;
+            }else sum=sum+i;
+        }
+        console.log("tổng cần tìm: " +sum);
+    } else console.log("xem lại số đã nhập");
+    </script>
+</body>
+</html>
