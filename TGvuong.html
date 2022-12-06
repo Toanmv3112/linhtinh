@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMGIACVUONG</title>
+</head>
+<body>
+    <!-- nhập 3 số và kt xem có là tam giác vuông ko? -->
+    <!-- chỉ quan tâm có là tam giác vuông hay ko, các trường hợp khác bỏ qua -->
+    <script>
+        let num1=-3;
+        let num2=4;
+        let num3=5;
+        if(num1>0 && num2>0 && num3>0){
+            if(num1*num1+ num2*num2 ==num3* num3 ||num1*num1+ num3*num3 ==num2* num2 ||num3*num3+ num2*num2 ==num1* num1){
+                console.log("3 số đã cho là 3 cạnh TG vuông");
+            } else console.log("3 cạnh đã cho không là cạnh TG vuông");
+        } else console.log("3 cạnh đã cho không là cạnh TG Vuông");
+    </script>
+</body>
+</html>

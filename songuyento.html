@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONGUYENTO</title>
+</head>
+
+<body>
+    <!-- nhập số n, KT có là số nguyên tố ko? -->
+    <script>
+        let num = 1234567;
+        let flag = false;
+        let divi = 1; 
+        // divisor = ước
+        let max = Math.sqrt(num);
+        for (i = 2; i <= max; i++) {
+            if (num % i == 0) {
+
+                flag = true;
+                divi = i; 
+                break;
+            }
+        }
+        if (flag) {
+            console.log(num+" có 1 ước là " + divi);
+            //in ra 1 ước để dễ KT
+            console.log(num + " không là số nguyên tố");
+        }
+        else console.log(num + " là số nguyên tố");
+    </script>
+</body>
+
+</html>

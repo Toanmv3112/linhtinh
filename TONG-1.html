@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TINHTONG1</title>
+</head>
+
+<body>
+    <!-- nhập số num, tính tổng các số chẵn từ 0 đến num,tổng các số lẻ từ 0 đến num -->
+    <script>
+        let num = 12;
+        let evenSum = 0; //tổng số chắn
+        let oddSum = 0; //tổng số lẻ
+        // chạy tách riêng:
+        // for (i = 0; i <= num; i = i + 2) {
+        //     evenSum += i;
+        // }
+        // console.log("tổng số chẵn: "+evenSum);
+
+
+        // for (i = 1; i <= num; i = i + 2) {
+        //     oddSum = oddSum + i;
+        // }
+
+        // console.log("tổng số lẻ: " +oddSum);
+        // chạy gộp:
+        for (i = 1; i <= num; i++) {
+            if (i % 2 == 0) {
+                evenSum += i;
+            } else oddSum += i;
+        }
+        console.log("tổng số chẵn là: " + evenSum);
+        console.log("tổng số lẽ là: " + oddSum);
+
+    </script>
+
+
+</body>
+
+</html>
